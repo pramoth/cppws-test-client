@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://pramoths-macbook-pro.local:8080/cpp-ws/ReghospHsubService?WSDL" uri="wsdl/pramoths-macbook-pro.local_8080/cpp-ws/ReghospHsubService.wsdl"/>
+    <system systemId="http://pramoths-macbook-pro.local:8080/cpp-ws/ReghospHsubService?xsd=1" uri="wsdl/pramoths-macbook-pro.local_8080/cpp-ws/ReghospHsubService.xsd_1.xsd"/>
+    <system systemId="http://pramoths-macbook-pro.local:8080/cpp-ws/ReghospHsubService?xsd=2" uri="wsdl/pramoths-macbook-pro.local_8080/cpp-ws/ReghospHsubService.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHsubService?xsd=2" uri="wsdl/localhost_8080/cpp-ws/ReghospHsubService.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHjoinService?xsd=2" uri="wsdl/localhost_8080/cpp-ws/ReghospHjoinService.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHsubService?WSDL" uri="wsdl/localhost_8080/cpp-ws/ReghospHsubService.wsdl"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHsubService?xsd=1" uri="wsdl/localhost_8080/cpp-ws/ReghospHsubService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHjoinService?WSDL" uri="wsdl/localhost_8080/cpp-ws/ReghospHjoinService.wsdl"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHjoinService?xsd=1" uri="wsdl/localhost_8080/cpp-ws/ReghospHjoinService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHmainService?WSDL" uri="wsdl/localhost_8080/cpp-ws/ReghospHmainService.wsdl"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHmainService?xsd=1" uri="wsdl/localhost_8080/cpp-ws/ReghospHmainService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHmainopService?WSDL" uri="wsdl/localhost_8080/cpp-ws/ReghospHmainopService.wsdl"/>
+    <system systemId="http://localhost:8080/cpp-ws/ReghospHmainopService?xsd=1" uri="wsdl/localhost_8080/cpp-ws/ReghospHmainopService.xsd_1.xsd"/>
+</catalog>

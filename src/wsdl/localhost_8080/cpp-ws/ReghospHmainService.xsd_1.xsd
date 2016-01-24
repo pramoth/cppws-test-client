@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://reghosphmainservice.wsinf.cppws.nhso.geniustree.co.th" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://reghosphmainservice.wsinf.cppws.nhso.geniustree.co.th">
+
+<xs:element name="ReghospHmain" type="tns:reghospHmain"/>
+
+<xs:element name="hmainAll" type="tns:hmainAll"/>
+
+<xs:element name="hmainAllResponse" type="tns:hmainAllResponse"/>
+
+<xs:complexType name="hmainAll">
+<xs:sequence>
+<xs:element name="page" type="xs:int"/>
+<xs:element name="size" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hmainAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reghospHmain" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reghospHmain">
+<xs:sequence>
+<xs:element name="hcode" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:decimal" minOccurs="0"/>
+<xs:element name="TDentK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TDentK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TDentO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TDentS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TDentS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TDentS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErK3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErK4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO5R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErO6R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TErS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIcuS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdK3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdK4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdO2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdO3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdO4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TIpdS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabO2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TLabS5R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM110R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM111R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM112R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM11R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM12R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM13R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM14R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM15R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM16R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM17R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM18R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM19R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM211R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM212R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM213R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM214R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM221R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM222R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM231R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM232R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM233R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM234R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM235R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM24R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM25R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM31R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM32R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM33R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM34R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM35R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM41R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM42R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM43R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM44R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TM45R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TObS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdK3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdO2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOpdS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrK3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS10R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS5R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS6R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS7R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS8R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TOrS9R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPharS5R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TPtS5R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysK1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysK2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysO1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysO2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysO3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysS1R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysS2R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysS3R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysS4R" type="xs:integer" minOccurs="0"/>
+<xs:element name="TXraysS5R" type="xs:integer" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is Metro/2.3 (tags/2.3-7528; 2013-04-29T19:34:10+0000) JAXWS-RI/2.2.8 JAXWS/2.2 svn-revision#unknown. --><xs:schema xmlns:tns="http://reghosphmainopservice.wsinf.cppws.nhso.geniustree.co.th" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://reghosphmainopservice.wsinf.cppws.nhso.geniustree.co.th">
+
+<xs:element name="ReghospHmainop" type="tns:reghospHmainop"/>
+
+<xs:element name="hmainOpAll" type="tns:hmainOpAll"/>
+
+<xs:element name="hmainOpAllResponse" type="tns:hmainOpAllResponse"/>
+
+<xs:complexType name="hmainOpAll">
+<xs:sequence>
+<xs:element name="page" type="xs:int"/>
+<xs:element name="size" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hmainOpAllResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:reghospHmainop" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="reghospHmainop">
+<xs:sequence>
+<xs:element name="hcode" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:decimal" minOccurs="0"/>
+<xs:element name="phM111" type="xs:string" minOccurs="0"/>
+<xs:element name="phM112" type="xs:string" minOccurs="0"/>
+<xs:element name="phM113" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM114" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM121" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM122" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM123" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM124" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM125" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM411" type="xs:string" minOccurs="0"/>
+<xs:element name="phM412" type="xs:string" minOccurs="0"/>
+<xs:element name="phM413" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM414" type="xs:string" minOccurs="0"/>
+<xs:element name="phM421" type="xs:string" minOccurs="0"/>
+<xs:element name="phM422" type="xs:string" minOccurs="0"/>
+<xs:element name="phM423" type="xs:string" minOccurs="0"/>
+<xs:element name="phM424" type="xs:string" minOccurs="0"/>
+<xs:element name="phM431" type="xs:string" minOccurs="0"/>
+<xs:element name="phM432" type="xs:string" minOccurs="0"/>
+<xs:element name="phM433" type="xs:string" minOccurs="0"/>
+<xs:element name="phM434" type="xs:string" minOccurs="0"/>
+<xs:element name="phM4411" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4412" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4413" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4414" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4422" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4432" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4442" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4452" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4512" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4522" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4532" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4542" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4552" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4612" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4622" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4632" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4642" type="xs:integer" minOccurs="0"/>
+<xs:element name="phM4651" type="xs:string" minOccurs="0"/>
+<xs:element name="phM4652" type="xs:string" minOccurs="0"/>
+<xs:element name="phM4653" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
