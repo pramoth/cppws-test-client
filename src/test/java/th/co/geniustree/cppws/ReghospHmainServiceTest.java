@@ -1,5 +1,6 @@
 package th.co.geniustree.cppws;
 
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,12 +28,9 @@ public class ReghospHmainServiceTest {
         try { // Call Web Service Operation
             ReghospHmainService_Service service = new ReghospHmainService_Service();
             ReghospHmainService port = service.getReghospHmainServicePort();
-            // TODO initialize WS operation arguments here
-            int page = 0;
-            int size = 0;
-            // TODO process result here
-            java.util.List<ReghospHmain> result = port.hmainAll(page, size);
-            System.out.println("Result = "+result);
+            
+            java.util.List<ReghospHmain> result = port.hmainAll("11592");
+            Assertions.assertThat(result).isNotEmpty();
         } catch (Exception ex) {
             // TODO handle custom exceptions here
         }

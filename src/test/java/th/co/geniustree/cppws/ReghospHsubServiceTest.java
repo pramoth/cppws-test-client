@@ -1,5 +1,6 @@
 package th.co.geniustree.cppws;
 
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,12 +28,8 @@ public class ReghospHsubServiceTest {
 
         ReghospHsubService_Service service = new ReghospHsubService_Service();
         ReghospHsubService port = service.getReghospHsubServicePort();
-        // TODO initialize WS operation arguments here
-        int page = 0;
-        int size = 10;
-        // TODO process result here
-        java.util.List<ReghospHsub> result = port.hsubAll(page, size);
-        System.out.println("Result = " + result);
+        java.util.List<ReghospHsub> result = port.hsubAll("23228");
+        Assertions.assertThat(result).isNotEmpty();
 
     }
 

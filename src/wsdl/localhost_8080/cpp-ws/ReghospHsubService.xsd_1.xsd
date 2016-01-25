@@ -8,8 +8,7 @@
 
 <xs:complexType name="hsubAll">
 <xs:sequence>
-<xs:element name="page" type="xs:int" minOccurs="0"/>
-<xs:element name="size" type="xs:int" minOccurs="0"/>
+<xs:element name="hcode" type="xs:string" minOccurs="0"/>
 </xs:sequence>
 </xs:complexType>
 

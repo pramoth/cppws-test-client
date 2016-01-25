@@ -1,5 +1,6 @@
 package th.co.geniustree.cppws;
 
+import org.assertj.core.api.Assertions;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -29,11 +30,8 @@ public class ReghospHjoinServiceTest {
             ReghospHjoinService_Service service = new ReghospHjoinService_Service();
             ReghospHjoinService port = service.getReghospHjoinServicePort();
             // TODO initialize WS operation arguments here
-            int page = 0;
-            int size = 1;
-            // TODO process result here
-            java.util.List<ReghospHjoin> result = port.hjoinAll(page, size);
-            System.out.println("Result = "+result);
+            java.util.List<ReghospHjoin> result = port.hjoinAll("24976");
+            Assertions.assertThat(result).isNotEmpty();
         } catch (Exception ex) {
             // TODO handle custom exceptions here
         }
