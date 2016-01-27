@@ -37,7 +37,7 @@
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
-                            <wsdlLocation>http://pramoths-macbook-pro.local:8080/cpp-ws/ReghospHsubService?WSDL</wsdlLocation>
+                            <wsdlLocation>${base.url}/ReghospHsubService?WSDL</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/ReghospHsubService.stale</staleFile>
                         </configuration>
                         <id>wsimport-generate-ReghospHsubService</id>
@@ -55,7 +55,7 @@
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
-                            <wsdlLocation>http://localhost:8080/cpp-ws/ReghospHjoinService?WSDL</wsdlLocation>
+                            <wsdlLocation>${base.url}/ReghospHjoinService?WSDL</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/ReghospHjoinService.stale</staleFile>
                         </configuration>
                         <id>wsimport-generate-ReghospHjoinService</id>
@@ -73,7 +73,7 @@
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
-                            <wsdlLocation>http://localhost:8080/cpp-ws/ReghospHmainService?WSDL</wsdlLocation>
+                            <wsdlLocation>${base.url}/ReghospHmainService?WSDL</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/ReghospHmainService.stale</staleFile>
                         </configuration>
                         <id>wsimport-generate-ReghospHmainService</id>
@@ -91,7 +91,7 @@
                             <vmArgs>
                                 <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
                             </vmArgs>
-                            <wsdlLocation>http://localhost:8080/cpp-ws/ReghospHmainopService?WSDL</wsdlLocation>
+                            <wsdlLocation>${base.url}/ReghospHmainopService?WSDL</wsdlLocation>
                             <staleFile>${project.build.directory}/jaxws/stale/ReghospHmainopService.stale</staleFile>
                         </configuration>
                         <id>wsimport-generate-ReghospHmainopService</id>
@@ -140,4 +140,21 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    <profiles>
+        <profile>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <id>geniustree</id>
+            <properties>
+                <base.url>http://geniustree.ath.cx/gf4/cppws</base.url>
+            </properties>
+        </profile>
+        <profile>
+            <id>local</id>
+            <properties>
+                <base.url>http://localhost:8080/cpp-ws</base.url>
+            </properties>
+        </profile>
+    </profiles>
 </project>
