@@ -156,5 +156,11 @@
                 <base.url>http://localhost:8080/cpp-ws</base.url>
             </properties>
         </profile>
+        <profile>
+            <id>nhso</id>
+            <properties>
+                <base.url>http://test.nhso.go.th/cppws</base.url>
+            </properties>
+        </profile>
     </profiles>
 </project>
